@@ -19,7 +19,7 @@ const create = async uusiPloki => {
 }
 
 const trash = async id => {
-  const config = {  headers: {  Authorization: token  }, port: 3003 }
+  const config = {  headers: {  Authorization: token  } }
   const res = await axios.delete(baseUrl+'/'+id, config)
   return res
 }
